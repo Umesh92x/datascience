@@ -1,9 +1,10 @@
-# how to create a infinity Infinity List Comprehension
+# how to create a Infinity List Comprehension
 
 input_list = [1,2,3]
-[input_list.append(value) for value in input_list] # taking item from input list and appending into into the same list  
+[input_list.append(value) for value in input_list] # Taking item from the input list and appending into the same list  
 
-Output -> Keep runnning....
+Output -> Keep running...until outside keyboard or kernel interruption 
+
 
 ''' The solution to add timeout '''
 
@@ -24,6 +25,6 @@ try :
     signal.alarm(0)
     
 except TimeoutError:
-    print("Code execution timed out due to over runnig for 5 mins")
+    print("Code execution timed out due to over running for 5 mins")
 
-output -> Code execution timed out due to over runnig for 5 mins
+output -> Code execution timed out due to over running for 5 mins
